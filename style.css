@@ -90,7 +90,6 @@ header section i{
         display: block;
     }
     .drop-down{
-        display: flex;
         flex-direction: row;
         width:30rem;
         align-items: flex-end;
@@ -106,6 +105,9 @@ header section i{
         overflow: hidden;
         padding: 2rem 4rem;
         margin-bottom: 0px;
+    }
+    .open{
+        display: flex;
     }
     .ul-list li{
         padding: .7rem;
