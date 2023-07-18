@@ -27,9 +27,10 @@ header{
     align-items: center;
     position: fixed;
     width: 100vw;
-    background-color: rgba(249, 249, 249, 0.4);
-    -webkit-backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(5px);
+    z-index: 10;
+    height: 8rem;
 }
 .img-logo{
     display: flex;
@@ -38,14 +39,14 @@ header{
 }
 .personal-img{
  border-radius: 50%;
- width: 6rem;
- height: 6rem;
- /* background-color: rgb(204, 161, 108); */
+ width: 5.5rem;
+ height: 5.7rem;
  overflow: hidden;
 }
 .personal-img img{
     max-width: 100%;
     object-position: center;
+    object-fit: contain;
 }
 .img-logo h2{
     font-size: clamp(1rem, -0.1639rem + 2.6604vw, 3.125rem);
@@ -53,9 +54,9 @@ header{
     letter-spacing: .13rem;
     color: var(--black);
 }
-header section .nav-list{
+header section .ul-list{
     display: flex;
-    gap: 2rem;
+    gap:clamp(0.3125rem, -0.0641rem + 0.8607vw, 1rem);;
     font-size: clamp(0.8125rem, 0.2305rem + 1.3302vw, 1.875rem);
 }
 header section{
@@ -63,12 +64,57 @@ header section{
     align-items: center;
 }
 header section i{
-    margin-left: 2rem;
-    font-size: clamp(0.8125rem, -0.1118rem + 2.1127vw, 2.5rem);
+    margin-left:clamp(0.3125rem, -0.201rem + 1.1737vw, 1.4rem);
+    font-size: clamp(0.8125rem, -0.1118rem + 2.1127vw, 2.3rem);
     cursor: pointer;
 }
-.nav-list li a{
+#hidden-bar{
+    color: var(--black);
+    display: none;
+}
+.ul-list li a{
     color: var(--black);
     font-weight: 700;
     letter-spacing: .12rem;
 }
+.drop-down{
+    display: none;
+}
+
+/* Media Query for Header */
+@media (max-width: 780px) {
+    .nav-list{
+        display: none;
+    }
+    #hidden-bar{
+        display: block;
+    }
+    .drop-down{
+        display: flex;
+        flex-direction: row;
+        width:30rem;
+        align-items: flex-end;
+        position: fixed;
+        right: 4rem;
+        top: 8rem;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(5px);
+        background-color: rgba(172, 153, 153, 0.1);
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        padding: 2rem 4rem;
+        margin-bottom: 0px;
+    }
+    .ul-list li{
+        padding: .7rem;
+        text-align: center;
+    }
+  }
+  @media (max-width: 500px) {
+    .drop-down{
+        width:80vw;
+    }
+  }
+
