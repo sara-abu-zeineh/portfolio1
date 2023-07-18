@@ -5,6 +5,7 @@
 }
 :root{
     --black : #000;
+    --golden-orange : #F9A602;
 }
 html{
     font-size: 62.5%;
@@ -50,9 +51,14 @@ header{
 }
 .img-logo h2{
     font-size: clamp(1rem, -0.1639rem + 2.6604vw, 3.125rem);
-    font-weight: bolder;
+    font-weight: 900;
     letter-spacing: .13rem;
     color: var(--black);
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+.img-logo h2:hover{
+    color: var(--golden-orange);
 }
 header section .ul-list{
     display: flex;
@@ -65,8 +71,14 @@ header section{
 }
 header section i{
     margin-left:clamp(0.3125rem, -0.201rem + 1.1737vw, 1.4rem);
-    font-size: clamp(0.8125rem, -0.1118rem + 2.1127vw, 2.3rem);
+    font-size: clamp(1.0125rem, -0.1118rem + 2.1127vw, 2.3rem);
     cursor: pointer;
+}
+i.dark-mood{
+        transition: color .3s ease-in;
+}
+i.dark-mood:hover{
+    color:var(--golden-orange);
 }
 #hidden-bar{
     color: var(--black);
@@ -76,6 +88,10 @@ header section i{
     color: var(--black);
     font-weight: 700;
     letter-spacing: .12rem;
+    transition: color .2s ease-in-out;
+}
+.ul-list li a:hover{
+    color: var(--golden-orange);
 }
 .drop-down{
     display: none;
@@ -90,9 +106,10 @@ header section i{
         display: block;
     }
     .drop-down{
+        display: flex;
         flex-direction: row;
         width:30rem;
-        align-items: flex-end;
+        height: 0;
         position: fixed;
         right: 4rem;
         top: 8rem;
@@ -103,8 +120,12 @@ header section i{
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        padding: 2rem 4rem;
         margin-bottom: 0px;
+        transition: height .9s cubic-bezier(0.215, 0.610, 0.355, 1)
+    }
+    .drop-down.open{
+        height: 15rem;
+        padding: 2rem 4rem;
     }
     .open{
         display: flex;
