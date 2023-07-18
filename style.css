@@ -3,6 +3,72 @@
     padding: 0;
     margin: 0;
 }
+:root{
+    --black : #000;
+}
 html{
     font-size: 62.5%;
+    overflow-x: hidden;
+}
+h1,h2,a{
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+li{
+    list-style-type: none;
+}
+header{
+    display: flex;
+    padding: 2rem 4rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(249, 249, 249, 0.4);
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(5px);
+}
+.img-logo{
+    display: flex;
+    align-items: center;
+    gap:1.4rem
+}
+.personal-img{
+ border-radius: 50%;
+ width: 6rem;
+ height: 6rem;
+ /* background-color: rgb(204, 161, 108); */
+ overflow: hidden;
+}
+.personal-img img{
+    max-width: 100%;
+    object-position: center;
+}
+.img-logo h2{
+    font-size: clamp(1rem, -0.1639rem + 2.6604vw, 3.125rem);
+    font-weight: bolder;
+    letter-spacing: .13rem;
+    color: var(--black);
+}
+header section .nav-list{
+    display: flex;
+    gap: 2rem;
+    font-size: clamp(0.8125rem, 0.2305rem + 1.3302vw, 1.875rem);
+}
+header section{
+    display: flex;
+    align-items: center;
+}
+header section i{
+    margin-left: 2rem;
+    font-size: clamp(0.8125rem, -0.1118rem + 2.1127vw, 2.5rem);
+    cursor: pointer;
+}
+.nav-list li a{
+    color: var(--black);
+    font-weight: 700;
+    letter-spacing: .12rem;
 }
