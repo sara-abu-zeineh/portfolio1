@@ -125,12 +125,22 @@ li{
     margin-bottom: .7rem;
 }
 .left-arrow{
+    display: block;
     position: absolute;
     top: 1.8rem; 
     font-size: 4rem;
     z-index: 20;
     color: var(--golden-orange);
     right: -15px;
+}
+i.none{
+    display: none ;
+    position: absolute;
+    top: 1.8rem; 
+    font-size: 4rem;
+    z-index: 20;
+    color: var(--golden-orange);
+    left: -15px;
 }
 .right-arrow{
     position: absolute;
@@ -140,4 +150,39 @@ li{
     color: var(--golden-orange);
     left: -15px;
 }
+
+@media screen and (max-width: 600px){
+    .timeline{
+        margin: 6rem auto;
+    }
+    .timeline::after{
+        left: 3.6rem;
+    }
+    .container{
+        width: 100%;
+        padding-left: 8rem;
+        padding-right: 2.5rem;
+    }
+    .text-card{
+        font-size: 1.3rem;
+    }
+    .text-card small{
+        margin-bottom: 1rem 0;
+    }
+    .right{
+        left: 0;
+    } 
+    .right .img-wrapper,.left .img-wrapper{
+        left: 2.4rem;
+    }
+    i.left-arrow{
+       display: none;
+    }
+    i.none{
+        display: block;
+      
+    }
+
+}
+
 
