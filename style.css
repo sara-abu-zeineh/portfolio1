@@ -42,13 +42,13 @@ li{
     width: 10em;
     font-size: clamp(3.25rem, 0.008rem + 6.975vw, 7.375rem);
     text-align: center;
-    margin-bottom: .4em;
+    margin-bottom: .2em;
 }
 .welcoming-text span{
     color: var(--golden-orange);
 }
 .tagline{
-    font-size: clamp(1.25rem, 0.008rem + 2.375vw, 2.8rem);
+    font-size: clamp(1.25rem, 0.008rem + 1.375vw, 2.8rem);
     text-align: center;
     padding: 0em 2em;
     margin-bottom: .4em;
@@ -57,7 +57,7 @@ li{
 .download{
     background-color: var(--golden-orange);
     color: var(--white);
-    font-size:clamp(1.15rem, 0.008rem + 1.975vw, 2.7rem);
+    font-size:clamp(1.15rem, 0.008rem + 1.475vw, 2.7rem);
     padding: .5em .9em;
     margin-top: 1em;
     border-radius: 2em;
