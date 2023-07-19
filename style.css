@@ -43,7 +43,12 @@ li{
     width: 10em;
     font-size: clamp(3.25rem, 0.008rem + 6.975vw, 7.375rem);
     text-align: center;
+    cursor: default;
     margin-bottom: .2em;
+}
+.welcoming-text::selection, .welcoming-text span::selection{
+    background: var(--golden-orange);
+    color: var(--white);
 }
 .welcoming-text span{
     color: var(--golden-orange);
