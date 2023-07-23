@@ -7,10 +7,71 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Raleway:wght@500&family=Teko&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Raleway:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/94c3cf904d.js" crossorigin="anonymous"></script>
         <title>Sarah Abu Zeneh</title>
     </head>
     <body>
-        <section id="about">
+        <header class="header-section">
+            <div class="img-logo">
+                <div class="personal-img">
+                    <img src="images/personal-img.jpeg" alt="Sarah Abu Zeneh personal image">
+                </div>
+                <h1>Sarah Abu Zeneh</h1>
+            </div>
+            <section>
+                <nav class="nav-list">
+                    <ul class="ul-list">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#edu">Education</a>
+                        </li>
+                        <li>
+                            <a href="#project">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <i class="fa-regular fa-moon dark-mood" title="Dark Mode"></i>
+                <i id="hidden-bar" class=" fa-solid fa-bars"></i>
+            </section>
+        </header>
+        <div id="drop-down" class="drop-down">
+            <ul class="ul-list">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#edu">Education</a>
+                </li>
+                <li>
+                    <a href="#project">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <section id="home">
+            <p class="welcoming-text">Hi there! My name is Sarah and I'm a
+                <span>front-end developer</span>
+            </p>
+            <p class="tagline">
+                Unlocking creativity, one mesmerizing masterpiece at a time - Welcome to my captivating portfolio!
+            </p>
+            <a href="utils/SAZ.pdf" title="Sarah's CV" class="download" download="sarah-abu-zeneh-CV">Download my CV</a>
+        </section>
+          <section id="about">
          <div class="about-wrapper">
             <h2>Hi, I’m Sarah. Nice to meet you.</h2>
             <p>As a front-end developer, I am deeply passionate about my work. 
@@ -23,4 +84,5 @@
          </div>
         </section>
     </body>
+    <script src="script.js"></script>
 </html>
