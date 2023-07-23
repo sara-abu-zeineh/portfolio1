@@ -13,8 +13,8 @@ html{
     --black : #000;
     --golden-orange : #F9A602;
     --white :#fff;
+    --medium-blue :#0a66c2;
     --golden-orange-shadow: rgba(202, 200, 198, 0.9);
-
 }
 html{
     font-size: 62.5%;
@@ -507,3 +507,83 @@ i.none{
         margin-top: 1rem;
     }  
 }
+
+#contact{
+    width: 100%;
+    height: calc(40vh +2rem);
+    color: var(--white);
+    background-color: var(--golden-orange);
+    padding:calc(5% + .8rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+#contact>h2{
+    font-size: clamp(2rem, 0.008rem + 2.975vw, 3.175rem);
+    text-align: center;
+}
+#contact h2 span{
+    font-size: clamp(3rem, 0.008rem + 5vw, 5.575rem);
+    font-family: 'Satisfy', cursive;
+}
+#contact >h4{
+    font-size: clamp(1.2rem, 0.008rem + 1.975vw, 1.9rem);
+    width:calc(60% + 1rem); 
+    text-align: center;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form >*{
+    margin-top: 2rem;
+}
+.contact-form input {
+    border:none; 
+    vertical-align:middle;
+    border-radius:22px;
+    width:calc(90% + 1rem);
+    padding:.98rem 18px; 
+    outline: 2px solid var(--white);
+    outline-offset: 3px;
+}
+.contact-form button{ 
+    background-color: transparent;
+    color: var(--white);
+    font-size:clamp(1.15rem, 0.008rem + 1.475vw, 1.5rem);
+    padding:.78rem 18px; 
+    border-radius: 2em;
+    border: none;
+    outline: 2px solid var(--white); 
+    outline-offset: -3px;  
+    cursor: pointer;
+    transition: all .3s ease-in-out; 
+  }
+ ::placeholder{
+    font-size:clamp(1.2rem, 0.008rem + 1.275vw, 1.4rem);
+  }
+  .contact-form button:hover{
+    outline-offset: 0px;  
+  }
+  .accounts-links{
+    margin-top: 1rem;
+  }
+  .accounts-links a{
+    margin-right: 1rem;
+  }
+  .accounts-links a i{
+    font-size: 2rem;
+    cursor: pointer;
+  } 
+  .accounts-links a:last-child i{
+    color:var(--black);
+  }
+  .accounts-links a:nth-child(2) i{
+    color:var(--medium-blue) ;
+  }
+  .accounts-links a:first-child i{
+    color: var(--white);
+  }
