@@ -4,10 +4,14 @@
     margin: 0;
     outline: none;
 }
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
 :root{
     --black : #000;
     --golden-orange : #F9A602;
-}
+    --white :#fff;
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -145,4 +149,49 @@ i.dark-mood:hover{
         width:80vw;
     }
   }
+#home{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.welcoming-text{
+    font-family: 'Teko', sans-serif;
+    width: 10em;
+    font-size: clamp(3.25rem, 0.008rem + 6.975vw, 7.375rem);
+    text-align: center;
+    cursor: default;
+    margin-bottom: .2em;
+}
+.welcoming-text::selection, .welcoming-text span::selection{
+    background: var(--golden-orange);
+    color: var(--white);
+}
+.welcoming-text span{
+    color: var(--golden-orange);
+}
+.tagline{
+    font-size: clamp(1.25rem, 0.008rem + 1.375vw, 2.8rem);
+    text-align: center;
+    padding: 0em 2em;
+    margin-bottom: .4em;
+    width: 40em;
+}
+.download{
+    background-color: var(--golden-orange);
+    color: var(--white);
+    font-size:clamp(1.15rem, 0.008rem + 1.475vw, 2.7rem);
+    padding: .5em .9em;
+    margin-top: 1em;
+    border-radius: 2em;
+    outline: 2px solid var(--white); 
+    outline-offset: -5px;  
+    transition: all .3s ease-in-out; 
+}
+.download:hover{
+    outline-offset: 5px;  
+    outline-color: var(--golden-orange);
 
+}
